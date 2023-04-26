@@ -1,6 +1,6 @@
-# Project Title
+# Creating a Token
 
-This Solidity program is a simple program that demonstrates the mint and burn function of token. The purpose of this program is to show the mint and burn function of a token
+This Solidity program is a simple program that creates token and demonstrates the mint and burn function of token. The purpose of this program is to show the mint and burn function of a token
 
 ## Description
 
@@ -149,7 +149,7 @@ To compile the code, click on the "Solidity Compiler" tab in the left-hand sideb
 
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "CREAM","SUFFIX","DASH" contract from the dropdown menu, and then click on the "Deploy" button.
 
-Once the contract is deployed, first get/copy the account number, after that use the mint and click the down arrow then put the account that you copied. Then put any amount that you will mint after that you can interact with it by clicking the transact function. To get the balance click the totalSupply function. After the mint is the burn function, first get/copy the account number, after that use the burn and click the down arrow then put the account that you copied. Then put any amount that you will burn(should'nt past more than you minted) after that you can interact with it by clicking the transact function. then finally to get the balance put the account number and click the balance function to get the latest balance of your acccount
+Once the contract is deployed, first get/copy the account number, after that use the mint and click the down arrow then put the account that you copied. Then put any amount that you will mint after that you can interact with it by clicking the transact function. To get the balance click the totalSupply function. After the mint is the burn function, first get/copy the account number, after that use the burn and click the down arrow then put the account that you copied. Then put any amount that you will burn(the amount should'nt be more than you minted) after that you can interact with it by clicking the transact function. then finally to get the balance put the account number and click the balance function to get the latest balance of your acccount.
 
 ## Authors
 
