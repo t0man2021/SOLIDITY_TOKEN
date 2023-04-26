@@ -31,7 +31,7 @@ pragma solidity 0.8.18;
        to the amount that is supposed to be burned.
 */
 
-contract Mint {
+contract Token {
 
     // public variables here
    string public tokenName = "CREAM";
@@ -47,7 +47,16 @@ contract Mint {
       totalSupply += _value;
       balances[_address] += _value;
    }
+
+    // burn function
+   function burn (address _address, uint _value) public {
+      if (balances[_address] >= _value) {
+          totalSupply -= _value;
+          balances[_address] -= _value;
+      }
+   }
 }
+
 ```
 ```
 // SPDX-License-Identifier: MIT
@@ -67,7 +76,7 @@ pragma solidity 0.8.18;
        to the amount that is supposed to be burned.
 */
 
-contract Burn {
+contract Token {
 
     // public variables here
    string public tokenName = "SUFFIX";
@@ -77,6 +86,12 @@ contract Burn {
 
     // mapping variable here
     mapping(address => uint) public balances;
+
+    // mint function
+   function mint (address _address, uint _value) public {
+      totalSupply += _value;
+      balances[_address] += _value;
+   }
 
     // burn function
    function burn (address _address, uint _value) public {
