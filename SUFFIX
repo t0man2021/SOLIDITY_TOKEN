@@ -15,11 +15,11 @@ pragma solidity 0.8.18;
        to the amount that is supposed to be burned.
 */
 
-contract MyToken {
+contract Token {
 
     // public variables here
-   string public tokenName = "SUFFIX";
-   string public tokenAbbrv = "SFX";
+   string public tokenName = "CREAM";
+   string public tokenAbbrv = "CRM";
    uint public totalSupply = 0;
 
 
